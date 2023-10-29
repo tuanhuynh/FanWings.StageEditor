@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Data>
+
+  <Enemies StartOffset="2" BlinkTime="0.1" InvisibleSpeed="2">
+    <Enemy Id="1" Prefab="HornFish" Speed="3" MaxVersion="5" Values="2">
+      <!--Values: MAX_ANIMATOR_SPEED, -->
+      <!--Items: Item 1: 2-->
+      <Part HP="10" Hardness="48" Coins="0.4,1,1" Explosion="5" DieSound="1" />
+      <Ability Rate="0.5" Type="2" Damage="7" >
+        <Bullet Id="4010" Version="0" />
+        <Bullet Id="4010" Version="1" Offset="0,-0.2"/>
+        <Bullet Id="4010" Version="2" Offset="0,-0.2" Values="0.8,1,1.2,320,360" />
+        <!--SpeedYRatio, MinRadius, MaxRadius, MinRotateSpeed, MaxRotateSpeed-->
+        <Bullet Id="4010" Version="3" Offset="0,-0.2" Values="1,0.5,0.5" />
+        <!--InitTime, ApproachTime, SlowSpeedRatio-->
+        <Bullet Id="4010" Version="4" Offset="0,-0.2" Values="0.5,0.1" />
+        <!--Invisible Time, Blink time-->
+        <Bullet Id="4010" Version="5" Offset="0,-0.2" Values="3,135,225" />
+        <!--ColiseCount, Radius, MinAngle, MaxAngle-->
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="2" Prefab="TinyFish" Speed="4" MaxVersion="4" Values="45,2,4,2,2,1,0.2">
+      <!--Values: v1 Angle Range, v2 default curve, v3 default curve, v3 default round, v4 default time, v4 default invi time, v4default fade -->
+      <Part HP="3.7" Hardness="65" Score="1" Coins="0.7,1,1" Explosion="7" />
+      <Ability Rate="1" Type="0" Damage="7">
+        <Bullet Id="4020" Version="0" Offset="0,-0.5" />
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="3" Prefab="YellowFish" Speed="3" MaxVersion="5">
+      <Part HP="20.6" Hardness="95" Score="1"  Coins="1,1,3" Explosion="6" />
+      <Ability Rate="1" Type="0" Damage="10">
+        <Bullet Id="4030" Version="1" Offset="0.25,-0.8" Angle="180" />
+        <Bullet Id="4030" Version="1" Offset="-0.25,-0.8" Angle="180" />
+
+        <Bullet Id="4030" Version="2" Offset="0,-0.8" Angle="180" />
+        <Bullet Id="4030" Version="2" Offset="-0.25,-0.8" Angle="170" />
+        <Bullet Id="4030" Version="2" Offset="0.25,-0.8" Angle="190" />
+
+        <Bullet Id="4030" Version="3" Offset="0,-0.8" Angle="180" />
+        <Bullet Id="4030" Version="3" Offset="-0.87,-0.13" Angle="100" />
+        <Bullet Id="4030" Version="3" Offset="0.9,-0.17" Angle="250" />
+        <Bullet Id="4030" Version="3" Offset="0.19,1.7" Angle="350" />
+
+        <Bullet Id="4030" Version="4" Offset="0,-0.8" Angle="180" />
+        <Bullet Id="4030" Version="4" Offset="-0.87,-0.13" Angle="100" />
+        <Bullet Id="4030" Version="4" Offset="0.9,-0.17" Angle="250" />
+        <Bullet Id="4030" Version="4" Offset="0.19,1.7" Angle="350" />
+        <Bullet Id="4030" Version="4" Offset="0.7,0.7" Angle="320" />
+        <Bullet Id="4030" Version="4" Offset="-0.6,0.75" Angle="40" />
+
+        <Bullet Id="4030" Version="5" Offset="0,-0.8" Angle="180" />
+        <Bullet Id="4030" Version="5" Offset="-0.87,-0.13" Angle="100" />
+        <Bullet Id="4030" Version="5" Offset="0.9,-0.17" Angle="250" />
+        <Bullet Id="4030" Version="5" Offset="0.19,1.7" Angle="350" />
+
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="4" Prefab="Tick" Speed="3" MaxVersion="4" Values="90,2,20" Sounds="4,0.1">
+      <!-- Values: angle speed, default init time, default killed time-->
+      <Part HP="14.3" Hardness="17" Score="1" Explosion="8" />
+      <Ability Rate="0.5" Type="1" Damage="20">
+        <Bullet Id="4040" Offset="0,0.4" Angle="0" />
+        <Bullet Id="4040" Offset="-0.3,0.2" Angle="60" />
+        <Bullet Id="4040" Offset="0.3,0.2" Angle="300" />
+        <Bullet Id="4040" Offset="-0.4,-0.15" Angle="120" />
+        <Bullet Id="4040" Offset="0.4,-0.15" Angle="240" />
+        <Bullet Id="4040" Offset="0,-0.4" Angle="180" />
+
+        <Bullet Id="4040" Offset="0,0.4" Angle="0" />
+        <Bullet Id="4040" Offset="-0.3,0.2" Angle="40" />
+        <Bullet Id="4040" Offset="0.3,0.2" Angle="320" />
+        <Bullet Id="4040" Offset="-0.36,-0.28" Angle="130" />
+        <Bullet Id="4040" Offset="0.36,-0.28" Angle="230" />
+        <Bullet Id="4040" Offset="-0.14,-0.4" Angle="170" />
+        <Bullet Id="4040" Offset="0.14,-0.4" Angle="190" />
+        <Bullet Id="4040" Offset="-0.4,0" Angle="85" />
+        <Bullet Id="4040" Offset="0.4,0" Angle="280" />
+
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="5" Prefab="WhaleShark" Speed="1.5" MaxVersion="2" Values="45">
+      <!--Angle range -->
+      <Part HP="41.2" Hardness="194" Score="1" Coins="1,1,3,4,1" Explosion="9" />
+      <Ability Rate="0.35" Damage="120" Time="">
+        <Bullet Id="4050" Version="1" Offset="0,0" Angle="180" />
+        <Bullet Id="4050" Version="2" Offset="0,0" Angle="180" />
+        <Bullet Id="4050" Version="2" Offset="0.3,-0.1" Angle="190" />
+        <Bullet Id="4050" Version="2" Offset="-0.3,-0.1" Angle="170" />
+      </Ability>
+
+      <Ability Rate="0.35" Type="0" Damage="120">
+
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="6" Prefab="Hummingbird" Speed="7"  MaxVersion="1" Values="30,45">
+      <!--Curve Range, Angle range -->
+      <Part HP="62.4" Hardness="147" Score="1" Explosion="10" />
+    </Enemy>
+
+    <Enemy Id="7" Prefab="Pupa" Speed="1.5" MaxVersion="4" Values="1,3,4,2,4">
+      <!--Values:Invisible time, teleport time min, teleport time max, teleport x min, teleport y min -->
+      <Part HP="41.2" Hardness="392" Score="1" Coins="1,1,8,4,1,5,1" Explosion="6" />
+      <Ability Rate="0.4" Type="0" Damage="119">
+        <Bullet Id="4070" Version="0" Offset="0,-0.45" />
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="8" Prefab="Bat" Speed="2" MaxVersion="2" Values="20,90,2,2,1">
+      <!--Values: Die time, anglespeed, curve height, accelaration, active time-->
+      <Part HP="31.2" Hardness="96" Score="1" Coins="1,5,1" Explosion="5" />
+      <Ability Rate="1" Type="0" Damage="10" Offset="0,0.2">
+        <Bullet Id="4080" Version="0" Offset="0,-0.6" />
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="9" Prefab="SpineFish" Speed="1.5">
+      <Part HP="285" Hardness="1010" Score="1" Coins="1,4,2,5,1" Bullet="1" Explosion="11" />
+    </Enemy>
+
+    <Enemy Id="10" Prefab="Bomb" Speed="2.5">
+      <Part HP="31.2" Hardness="72" Score="1" Explosion="12" />
+      <Ability Damage="5000">
+        <Bullet Id="4100"/>
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="11" Prefab="Rocket" Speed="5" Values="2,2,0.7">
+      <!--Values: wait time, fadespeed, bulletScale-->
+      <Part HP="37.4" Hardness="304" Score="1" Bullet="1" Explosion="13" />
+    </Enemy>
+
+    <Enemy Id="12" Prefab="Lobster" Speed="1.5" MaxVersion="1" Values="5">
+      <Part HP="31.2" Hardness="542" Coins="1,1,3,4,1" Explosion="13" />
+      <Ability Rate="0.18" Damage="60" Time="2,10,6">
+        <Bullet Id="4120" Version="0" Offset="-0.5,0" Angle="150" />
+        <Bullet Id="4120" Version="1" Offset="0.5,0" Angle="210"/>
+        <Bullet Id="4120" Version="2" Offset="-0.2,-0.3" Angle="170"/>
+        <Bullet Id="4120" Version="3" Offset="0.2,-0.3" Angle="190"/>
+      </Ability>
+
+      <Ability Rate="0.18" Damage="60" Type="3">
+        <Bullet Id="4120" Version="4" Offset="-0.5,0" Angle="130" Values="110,140"/>
+        <Bullet Id="4120" Version="5" Offset="0.5,0" Angle="230" Values="220,250"/>
+        <Bullet Id="4120" Version="6" Offset="-0.35,0.7" Angle="20"/>
+        <Bullet Id="4120" Version="7" Offset="0.35,0.7" Angle="-20"/>
+        <Bullet Id="4120" Version="8" Offset="-0.2,-0.3" Angle="170"/>
+        <Bullet Id="4120" Version="9" Offset="0.2,-0.3" Angle="190"/>
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="13" Prefab="HornCat" Speed="1.5" MaxVersion="1">
+      <Part HP="700" Hardness="500" Score="1" Coins="1,4,1,5,3" Explosion="12" />
+      <!--<Ability Rate="1" Damage="7" >
+        <Bullet Id="4130" Version="0" />
+      </Ability>-->
+    </Enemy>
+
+    <Enemy Id="14" Prefab="FiveEyes" ChildId="11" Speed="1.5" MaxVersion="1" Values="7,4,2">
+      <!--Values: XStart, Shield time (version 0), RocketRate-->
+      <!--Speed: Speed when animated fast (version 1) -->
+      <Part HP="92.3" Hardness="594" Coins="1,1,3,4,1,5,1" Explosion="14" />
+      <Child Id="11" SpeedRatio="1" Version="-1" />
+      <Ability Rate="1" Type="3" Damage="10" Time="0,4">
+        <Bullet Id="4140" Offset="-0.95,0"     Angle="180" />
+        <Bullet Id="4140" Offset="-1.38,-0.29" Angle="180" />
+        <Bullet Id="4140" Offset="-1.15,-0.79" Angle="180" />
+        <Bullet Id="4140" Offset="-0.48,-0.09" Angle="180" />
+        <Bullet Id="4140" Offset="-0.68,0.59"  Angle="180" />
+        <Bullet Id="4140" Offset="0.95,0"      Angle="180" />
+        <Bullet Id="4140" Offset="1.38,-0.29"  Angle="180" />
+        <Bullet Id="4140" Offset="1.15,-0.79"  Angle="180" />
+        <Bullet Id="4140" Offset="0.48,-0.09"  Angle="180" />
+        <Bullet Id="4140" Offset="0.68,0.59"   Angle="180" />
+      </Ability>
+      <Ability Rate="1" Type="1" Damage="10" Time="1,4">
+        <Bullet Id="4140" Offset="-0.95,0"     Angle="180" />
+        <Bullet Id="4140" Offset="-1.25,-0.27" Angle="180"/>
+        <Bullet Id="4140" Offset="0.95,0"     Angle="180" />
+        <Bullet Id="4140" Offset="1.25,-0.27" Angle="180"/>
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="15" Prefab="Beam" MaxVersion="1" Values="10">
+      <Ability Type="3" Damage="990">
+        <Bullet Id="4150" />
+        <Bullet Id="4151" Angle="180" />
+      </Ability>
+    </Enemy>
+
+
+    <Enemy Id="16" Prefab="OrangeHornFish" Speed="3" MaxVersion="5" Values="2">
+      <!--Values: MAX_ANIMATOR_SPEED, -->
+      <!--Items: Item 1: 2-->
+      <Part HP="10" Hardness="48" Coins="0.4,1,1" Explosion="5" DieSound="1" />
+      <Ability Rate="0.8" Type="2" Damage="7" >
+        <Bullet Id="4160" Version="0" />
+        <Bullet Id="4160" Version="1" Offset="0,-0.2"/>
+        <Bullet Id="4160" Version="2" Offset="0,-0.2" Values="0.9,0.5,0.6,320,360" />
+        <!--SpeedYRatio, MinRadius, MaxRadius, MinRotateSpeed, MaxRotateSpeed-->
+        <Bullet Id="4160" Version="3" Offset="0,-0.2" Values="0.5,0.3,1.5" />
+        <!--InitTime, ApproachTime, SlowSpeedRatio-->
+        <Bullet Id="4160" Version="4" Offset="0,-0.2" Values="0.6,0.3,0.2" />
+        <!--Invisible Time, Blink time-->
+        <Bullet Id="4160" Version="5" Offset="0,-0.2" Values="2,60,120" />
+        <!--ColiseCount, Radius, MinAngle, MaxAngle-->
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="17" Prefab="RedTinyFish" Speed="4" MaxVersion="4" Values="45,2,2,6,2,1,0.3">
+      <!--Values: v1 Angle Range, v2 default curve, v3 default curve, v3 default round, v4 default time, v4 default invi time, v4default fade -->
+      <Part HP="3.7" Hardness="65" Score="1" Coins="0.7,1,1" Explosion="7" />
+      <Ability Rate="1" Type="0" Damage="7">
+        <Bullet Id="4170" Version="0" Offset="0,-0.35" />
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="18" Prefab="BlueFish" Speed="3" MaxVersion="5">
+      <Part HP="20.6" Hardness="95" Score="1"  Coins="1,1,3" Explosion="6" />
+      <Ability Rate="1" Type="0" Damage="10">
+        <Bullet Id="4180" Version="1" Offset="0.08,-0.4" Angle="180" Values="5" />
+        <Bullet Id="4180" Version="1" Offset="-0.08,-0.4" Angle="180" Values="-5" />
+
+        <Bullet Id="4180" Version="2" Offset="0,-0.7" Angle="180" />
+        <Bullet Id="4180" Version="2" Offset="-0.15,-0.7" Angle="160" />
+        <Bullet Id="4180" Version="2" Offset="0.15,-0.7" Angle="200" />
+
+        <Bullet Id="4180" Version="3" Offset="0,-0.8" Angle="180" />
+        <Bullet Id="4180" Version="3" Offset="-0.87,-0.13" Angle="100" />
+        <Bullet Id="4180" Version="3" Offset="0.9,-0.17" Angle="250" />
+        <Bullet Id="4180" Version="3" Offset="0.19,1.7" Angle="350" />
+
+        <Bullet Id="4180" Version="4" Offset="0,-0.8" Angle="180" />
+        <Bullet Id="4180" Version="4" Offset="-0.87,-0.13" Angle="100" />
+        <Bullet Id="4180" Version="4" Offset="0.9,-0.17" Angle="250" />
+        <Bullet Id="4180" Version="4" Offset="0.19,1.7" Angle="350" />
+        <Bullet Id="4180" Version="4" Offset="0.7,0.7" Angle="320" />
+        <Bullet Id="4180" Version="4" Offset="-0.6,0.75" Angle="40" />
+
+        <Bullet Id="4180" Version="5" Offset="0,-0.8" Angle="175" Values="0.7" Speed="1.5" />
+        <Bullet Id="4180" Version="5" Offset="-0.87,-0.13" Angle="185" Values="1.4" Speed="1.5" />
+        <Bullet Id="4180" Version="5" Offset="0.9,-0.17" Angle="170" Values="-0.7"  Speed="1.5"/>
+        <Bullet Id="4180" Version="5" Offset="0.19,1.7" Angle="190" Values="-1.4"  Speed="1.5"/>
+
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="19" Prefab="BlackBomb" Speed="2.5">
+      <Part HP="31.2" Hardness="72" Score="1" Explosion="12" />
+      <Ability Damage="5000">
+        <Bullet Id="4190"/>
+        <Bullet Id="4100"/>
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="20" Prefab="LittleSpineFish" Speed="1.5" Sounds="2,1">
+      <Part HP="185" Hardness="1010" Score="1" Coins="1,4,2,5,1" Bullet="1" Explosion="11" />
+    </Enemy>
+
+    <Enemy Id="21" Prefab="BeeHive" Speed="3" Sounds="">
+      <Child Id="4" SpeedRatio="1" Version="-1" />
+      <Child Id="6" SpeedRatio="2" Version="0" />
+      <Child Id="8" SpeedRatio="1" Version="1" />
+      <Child Id="20" SpeedRatio="1" Version="0" />
+      <Child Id="23" SpeedRatio="1" Version="0" />
+      <Child Id="24" SpeedRatio="1" Version="0" />
+      <Child Id="29" SpeedRatio="1" Version="0" />
+      <Part HP="20" Hardness="50" Score="1" Coins="1,4,2,5,1" Explosion="11" DieSound="3" />
+    </Enemy>
+
+    <Enemy Id="22" Prefab="MistInsect" Speed="3" Values="">
+      <Flying Id="43" SpeedRatio="1" Position="" />
+      <Part HP="12" Hardness="65" Coins="0.7,1,1" Explosion="7" />
+    </Enemy>
+
+    <Enemy Id="23" Prefab="StalkerBeast" Speed="2.5" Values="3,0.5,4,1.5,0.5,0.6,0.6,0.4,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7">
+      <Part HP="1500" Hardness="0" Score="1"  Explosion="13" />
+    </Enemy>
+
+    <Enemy Id="24" Prefab="Libe" Speed="2.5" MaxVersion="1"  Sounds=""
+           Values="180,1.5,20,0.7,0.6,0.85,1.2,1,0.95,1.05">
+      <Child Id="24" SpeedRatio="0.8" Version="-1" Values="1.2" />
+      <Part HP="40" Hardness="25" Score="1" Explosion="7" />
+    </Enemy>
+
+    <Enemy Id="25" Prefab="OBird" Speed="1.5" MaxVersion="" Values="1,3,2,5" Sounds="5,1,6,1">
+      <Part HP="160" Hardness="180" Coins="1,1,3,4,1" Explosion="13" DieSound="7,1" />
+      <Ability Type="3" Damage="120" Time="">
+        <Bullet Id="4250" Version="0" Offset="0,0.8" Angle="" Values="2" />
+        <Bullet Id="4250" Version="1" Offset="0,0.8" Angle="" Values="2" />
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="26" Prefab="UglyBeast" Speed="2" MaxVersion="" Values="">
+      <Part HP="300" Hardness="180" Coins="0.4,1,1" Explosion="5" DieSound="1" />
+      <Ability Rate="1" Type="1" Damage="70" >
+        <Bullet Id="4260" Version="0" />
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="27" Prefab="LeafBird" Speed="2" MaxVersion="1" Values="">
+      <Part HP="100" Hardness="48" Coins="0.4,1,1" Explosion="5" DieSound="1" />
+      <Ability Rate="1.5" Type="0" Damage="9" >
+        <Bullet Id="4270" Version="0" Offset="0,-0.15" Speed="1" Angle="180" />
+        <Bullet Id="4270" Version="1" Offset="-0.5,0" Speed="0.95" Angle="177" />
+        <Bullet Id="4270" Version="1" Offset="0.5,0" Speed="0.95" Angle="183" />
+        <Bullet Id="4270" Version="1" Offset="-0.7,0.05" Speed="0.85" Angle="174" />
+        <Bullet Id="4270" Version="1" Offset="0.7,0.05" Speed="0.85" Angle="187" />
+      </Ability>
+      <Ability Rate="1" Type="0" Damage="7" >
+        <Bullet Id="4270" Version="2" Offset="0,-0.15" Speed="0.6" Angle="180" />
+        <Bullet Id="4270" Version="2" Offset="-0.5,0" Speed="0.6" Angle="175" />
+        <Bullet Id="4270" Version="2" Offset="0.5,0" Speed="0.6" Angle="185" />
+        <Bullet Id="4270" Version="2" Offset="-0.7,0.05" Speed="0.4" Angle="170" />
+        <Bullet Id="4270" Version="2" Offset="0.7,0.05" Speed="0.4" Angle="190" />
+        <Bullet Id="4270" Version="2" Offset="-0.7,0.05" Speed="0.6" Angle="195" />
+        <Bullet Id="4270" Version="2" Offset="0.7,0.05" Speed="0.6" Angle="165" />
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="28" Prefab="BrownBird" Speed="1.5" MaxVersion="0" Values="20,45,1,2,1">
+      <!--Values: Die time, anglespeed, curve height, accelaration, active time-->
+      <Part HP="60" Hardness="96" Score="1" Coins="1,5,1" Explosion="5" />
+      <Ability Rate="1.5" Type="0" Damage="25" Offset="0,0.2">
+        <Bullet Id="4280" Version="0" Offset="0,-0.6" />
+      </Ability>
+      <Ability Rate="0.5" Type="0" Damage="65" Offset="0,0.2">
+        <Bullet Id="4280" Version="0" Offset="0,-0.6" Speed="1.5" />
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="29" Prefab="FlyingPinsir" Speed="3" MaxVersion="0" Values="20,45,1,2,1">
+      <!--Values: Die time, anglespeed, curve height, accelaration, active time-->
+      <Part HP="50" Hardness="180" Score="1" Coins="1,5,1" Explosion="5" />
+    </Enemy>
+
+    <Enemy Id="30" Prefab="TransBeast" Speed="2" MaxVersion="0" Values="20,45,1,2,1">
+      <!--Values: Die time, anglespeed, curve height, accelaration, active time-->
+      <Part HP="150" Hardness="140" Score="1" Coins="1,5,1" Explosion="5" />
+    </Enemy>
+
+    <Enemy Id="31" Prefab="CuteMonsta" Speed="3" MaxVersion="3" Values="2">
+      <Part HP="10" Hardness="48" Coins="0.4,1,1" Explosion="5" DieSound="1" />
+      <Ability Rate="0.5" Type="2" Damage="7" >
+        <Bullet Id="4310" Version="1" Offset="0,-0.2"/>
+      </Ability>
+      <Ability Rate="1" Type="2" Damage="5" >
+        <Bullet Id="4310" Version="2" Offset="0,-0.2" Values="0.7,0.6,1,420,460" />
+        <Bullet Id="4310" Version="2" Offset="0,-0.2" Values="0.7,0.6,1,420,460" />
+      </Ability>
+      <Ability Rate="0.8" Type="2" Damage="7" >
+        <Bullet Id="4310" Version="3" Offset="0,-0.2" Values="0.5,0.3,0.4" />
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="32" Prefab="TinyMonsta" Speed="4" MaxVersion="3" Values="45,1.3,2,2">
+      <Part HP="3.7" Hardness="65" Score="1" Coins="0.7,1,1" Explosion="7" />
+      <Ability Rate="1" Type="0" Damage="7">
+        <Bullet Id="4320" Version="0" Offset="0,0" />
+      </Ability>
+    </Enemy>
+
+    <Enemy Id="33" Prefab="BigMonsta" Speed="3" MaxVersion="3">
+      <Part HP="20.6" Hardness="95" Score="1"  Coins="1,1,3" Explosion="6" />
+
+      <Ability Rate="1" Type="0" Damage="10">
+        <Bullet Id="4330" Version="1" Offset="0.4,-0.65" Angle="180" />
+        <Bullet Id="4330" Version="1" Offset="-0.4,-0.65" Angle="180" />
+      </Ability>
+
+      <Ability Rate="1" Type="0" Damage="10">
+        <Bullet Id="4330" Version="2" Offset="0,-0.1" Angle="180" />
+        <Bullet Id="4330" Version="2" Offset="0.4,-0.65" Angle="170" />
+        <Bullet Id="4330" Version="2" Offset="-0.4,-0.65" Angle="190" />
+      </Ability>
+
+      <Ability Rate="1" Type="0" Damage="10">
+        <Bullet Id="4330" Version="4" Offset="-0.9,-0.1" Angle="110" />
+        <Bullet Id="4330" Version="4" Offset="-0.45,-0.5" Angle="165" />
+        <Bullet Id="4330" Version="4" Offset="0.9,-0.1" Angle="-110" />
+        <Bullet Id="4330" Version="4" Offset="0.45,-0.5" Angle="-165" />
+        <Bullet Id="4330" Version="4" Offset="0,-0.1" Angle="180" />
+      </Ability>
+
+      <Ability Rate="30" Type="0" Damage="1" Time="0,3,3">
+        <Bullet Id="4331" Version="0" Offset="0,0" Angle="220" />
+      </Ability>
+    </Enemy>
+
+  </Enemies>
+
+  <Bosses>
+
+    <Boss Id="1" Prefab="Torou">
+
+    </Boss>
+
+    <Boss Id="2" Prefab="Kakurus" >
+      <!--Body-->
+      <Part Index="0" Type="1" HP="1000" Hardness="1000" />
+      <Ability Rate="0.2" Type="1" Damage="1" >
+        <Bullet Id="5020" Version="0" />
+      </Ability>
+
+      <!--Head-->
+      <Part Index="1" Type="2" HP="500" Hardness="400" />
+      <Ability Rate="0.2" Type="1" Damage="1" >
+        <Bullet Id="5020" Version="0" />
+      </Ability>
+
+      <!--LeftWing-->
+      <Part Index="2" Type="1" HP="300" Hardness="150" />
+      <Ability Rate="5" Type="1" Damage="1" >
+        <Bullet Id="5020" Version="0" />
+      </Ability>
+
+      <!--RightWing-->
+      <Part Index="3" Type="1" HP="300" Hardness="150" />
+      <Ability Rate="5" Type="1" Damage="1" >
+        <Bullet Id="5020" Version="0" />
+      </Ability>
+    </Boss>
+
+    <Boss Id="3" Prefab="Ceetus" />
+    <Boss Id="4" Prefab="Lobstur" />
+    <Boss Id="5" Prefab="Hydra" />
+    <Boss Id="6" Prefab="Precisio" />
+    <Boss Id="7" Prefab="Lepidus" />
+    <Boss Id="8" Prefab="Balrosaur" />
+
+  </Bosses>
+
+</Data>
+

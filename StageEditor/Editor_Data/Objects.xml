@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Data>
+
+  <Ranks>
+    <Rank Id="1" Start="1" End="40" StatRatio="0.1" MaxMoveCount="1" />
+    <Rank Id="2" Start="41" End="70" StatRatio="0.12" MaxMoveCount="2" />
+    <Rank Id="3" Start="71" End="100" StatRatio="0.14" MaxMoveCount="3" />
+  </Ranks>
+
+  <Bullets PointBulletBoundSize="0.6" RaycastDistance="0.1" MediumBulletBoundSize="1" >
+
+    <Bullet Id="2000" Prefab="CapricornBullet" IsSpecial="1" Speed="3" Values="360" IsWave="1"  />
+
+    <Bullet Id="1010" Prefab="CrocoSmall"     Speed="13" Explosion="1" />
+    <Bullet Id="1011" Prefab="CrocoMedium"    Speed="13" Explosion="1" />
+    <Bullet Id="1020" Prefab="RaytaSmall"     Speed="14" Explosion="2" />
+    <Bullet Id="1021" Prefab="RaytaMedium"    Speed="10" Explosion="2" />
+    <Bullet Id="1030" Prefab="CarcinusSmall"  Speed="12" Explosion="1" />
+    <Bullet Id="1031" Prefab="CarcinusMedium" Speed="12" Explosion="1" />
+    <Bullet Id="1032" Prefab="CarcinusLarge"  Speed="10" Explosion="1" />
+    <Bullet Id="1040" Prefab="NightraSmall"   Speed="10" Explosion="1" />
+    <Bullet Id="1041" Prefab="NightraMedium"  Speed="11" Explosion="1" />
+    <Bullet Id="1050" Prefab="UnicodeSmall"   Speed="11" Explosion="1" />
+    <Bullet Id="1051" Prefab="UnicodeMedium"  Speed="12" Explosion="1" />
+
+    <Bullet Id="2012" Prefab="Magmar"       IsSpecial="1" Speed="4" Explosion="3" Time="0.5" Values="360,0.2,0.95,1.1" />
+    <Bullet Id="2022" Prefab="RaytaSpecial" IsSpecial="1" Speed="7" Explosion=""                 />
+    <Bullet Id="2033" Prefab="Crab_Left"    IsSpecial="1" Speed="3" Explosion="3" Time="0.2"     />
+    <Bullet Id="2034" Prefab="Crab_Right"   IsSpecial="1" Speed="3" Explosion="3" Time="0.2"     />
+    <Bullet Id="2042" Prefab="BlueFlame"    IsSpecial="1" Speed="7" Explosion=""  Time="0,0,0.2" />
+    <Bullet Id="2052" Prefab="ThunderLaser" IsSpecial="1" Speed="7" Explosion="1" Time="0.1" Values="2,2.5,12,16,16,0.1,0.5" IsWave="1" LifeTime="1" />
+
+    <Bullet Id="3010" Prefab="FireRing"          IsSpecial="1" Speed="4" Time="0,5"  Explosion="1" IsWave="1" Values="0.1,360,420" />
+    <Bullet Id="3020" Prefab="Bubble"            IsSpecial="1" Speed="1"   Time="2.5,2,0.5" DestroyBullet="1" Values="1,0.5"         />
+    <Bullet Id="3030" Prefab="Thunderbolt_Left"  IsSpecial="1" Speed="13"  Explosion="1" Time="0.2"                         Values="0.3"           />
+    <Bullet Id="3031" Prefab="Thunderbolt_Right" IsSpecial="1" Speed="13"  Explosion="1" Time="0.1"                         Values="0.3"           />
+    <Bullet Id="3040" Prefab="PingPongFire"      IsSpecial="1" Speed="4"   Explosion="1" Time="6"                           Values="0.2,1,3,0.5"   />
+    <Bullet Id="3050" Prefab="ElectroBall"       IsSpecial="1" Speed="0.5" Time="1" LifeTime="1" IsWave="1"   Values="0.2,1000,1500" />
+    <Bullet Id="3051" Prefab="ElectroArrow"      IsSpecial="1" Speed="7"   Explosion="1"                                                  Values="0.1"           />
+    <Bullet Id="3060" Prefab="IceShard"          IsSpecial="1" Speed="8"   Explosion="4" Time="0.2,0.3,0.2"                 Values="4,0.1"         />
+
+    <Bullet Id="4010" Prefab="HornFishBullet"   Speed="5" Explosion="4" Values="0.1,5"     />
+    <Bullet Id="4020" Prefab="TinyFishBullet"   Speed="8" Explosion="4" Values="0.15"    />
+    <Bullet Id="4030" Prefab="YellowFishBullet" Speed="6" Explosion="4" Values="0.1,0.1"     />
+    <Bullet Id="4040" Prefab="TickBullet"       Speed="6" Explosion="3" Values="0.1"     />
+    <Bullet Id="4050" Prefab="RedLaser"                      IsWave="1" Time="1.7,0.7"   />
+    <Bullet Id="4070" Prefab="PupaBullet"       Speed="3" Explosion="7" Time="0.1"       />
+    <Bullet Id="4080" Prefab="BatBullet"        Speed="8" Explosion="3" Values="0.15"    />
+    <Bullet Id="4100" Prefab="BombBullet"      IsSpecial="1" IsWave="1" Time="0,0.25"  />
+    <Bullet Id="4120" Prefab="BlueLaser"                     IsWave="1" Time="1.7,1"     />
+    <Bullet Id="4140" Prefab="FiveEyesBullet"   Speed="5" Explosion="3" Values="0.2,0.95,1.05"     />
+    <Bullet Id="4150" Prefab="ElectricBeam"                  IsWave="1" Time="3.5,3,0.6" />
+    <Bullet Id="4151" Prefab="FireBeam"                      IsWave="1" Time="3.5,3,0.6" />
+    <Bullet Id="4160" Prefab="OrangeHornFishBullet"   Speed="5" Explosion="4" Values="0.1,5"     />
+    <Bullet Id="4170" Prefab="RedTinyFishBullet"   Speed="8" Explosion="4" Values="0.15"    />
+    <Bullet Id="4180" Prefab="BlueFishBullet" Speed="3" Explosion="4" Values="0.1,0.1"     />
+    <Bullet Id="4190" Prefab="BlackBombBullet"      IsSpecial="1" IsWave="1" Time="0,0.25"  />
+    <Bullet Id="4240" Prefab="LibeBullet"       Speed="6" Explosion="3" Values="0.1"     />
+    <Bullet Id="4250" Prefab="OBirdBullet"       Speed="6" Explosion="7" Time="2" Values="5,0.2,90"       />
+    <Bullet Id="4260" Prefab="UglyBeastBullet"       Speed="3" IsWave="1" Time="1,2.2,1" Values=""       />
+    <Bullet Id="4270" Prefab="LeafBirdBullet"   Speed="5" Explosion="3" Time="0.5" Values=""     />
+    <Bullet Id="4280" Prefab="BrownBirdBullet"        Speed="10" Explosion="3" Values="0.2"    />
+    <Bullet Id="4310" Prefab="CuteMonstaBullet"   Speed="5" Explosion="4" Values="0.1,7"     />
+    <Bullet Id="4320" Prefab="TinyMonstaBullet"   Speed="8" Explosion="4" Values="0.15"    />
+    <Bullet Id="4330" Prefab="BigMonstaBullet" Speed="8" Explosion="4" Values="0.1,0.1"     />
+    <Bullet Id="4331" Prefab="BigMonstaFireBullet" Speed="6" Time="0.5,2,1"  Values="0.1,0.1"     />
+    
+    <Bullet Id="5020" Prefab="KakurusSmallBullet"   Speed="5" Explosion="4" Values="" />
+
+  </Bullets>
+
+  <Explosions>
+    <Explosion Id="1"  Prefab="TinyExplosion_Yellow"  Duration="0.1"  Scales="0.1,0.65" Move="0" RandomAngle="360" RandomOffset="0.2" />
+    <Explosion Id="2"  Prefab="TinyExplosion_Blue"    Duration="0.1"  Scales="0.1,0.65" Move="0" RandomAngle="360" RandomOffset="0.2"  />
+    <Explosion Id="3"  Prefab="SmallExplosion_Yellow" Duration="0.5"  Scales="0.5,0.7"  Move="1" RandomAngle="360"/>
+    <Explosion Id="4"  Prefab="SmallExplosion_Blue"   Duration="0.5"  Scales="0.5,0.7"  Move="1" RandomAngle="360"/>
+    <Explosion Id="5"  Prefab="MediumExplosion1"      Duration="1"    Scales="0.8,0.95" Move="0.5" />
+    <Explosion Id="6"  Prefab="MediumExplosion2"      Duration="0.5"  Scales="0.9,1"    Move="0.5" />
+    <Explosion Id="7"  Prefab="MediumExplosion3"      Duration="0.57" Scales="0.6,0.7"  Move="0.5" />
+    <Explosion Id="8"  Prefab="MediumExplosion3"      Duration="0.57" Scales="0.6,0.7"  Move="0.5" AnimationSpeed="2" />
+    <Explosion Id="9"  Prefab="MediumExplosion2"      Duration="0.5"  Scales="0.8,0.9"  Move="0.5" />
+    <Explosion Id="10" Prefab="MediumExplosion1"      Duration="1"    Scales="0.8,0.95" Move="1.1" AnimationSpeed="1.5" />
+    <Explosion Id="11" Prefab="MediumExplosion1"      Duration="1"    Scales="2.6"      Move="0.5" />
+    <Explosion Id="12" Prefab="MediumExplosion1"      Duration="1"    Scales="1.8"      Move="0.5" AnimationSpeed="2" />
+    <Explosion Id="13" Prefab="MediumExplosion2"      Duration="0.5"  Scales="0.9,1"    Move="1.1" AnimationSpeed="1.5" />
+    <Explosion Id="14" Prefab="MediumExplosion2"      Duration="0.5"  Scales="1.5"      Move="0.5" />
+  </Explosions>
+
+  <Items InitTime="0.2" CollectTime="0.2" ShowRadius="0.3,0.6" BoundSize="0.7" Accelerator="0.5">
+
+    <Item Id="1"  Name="Coin"        Speed="1.5"  ShowRadius="1" IsCoin="1" CoinValue="1" />
+    <Item Id="2"  Name="Coin_Large"  Speed="1.45" ShowRadius="1" IsCoin="1" CoinValue="2" />
+    <Item Id="3"  Name="Ruby_Large"  Speed="1.25" ShowRadius="1" IsCoin="1" CoinValue="20" />
+    <Item Id="4"  Name="Ruby_Medium" Speed="1.3"  ShowRadius="1" IsCoin="1" CoinValue="10" />
+    <Item Id="5"  Name="Ruby_Small"  Speed="1.35" ShowRadius="1" IsCoin="1" CoinValue="5" />
+
+    <Item Id="6"  Name="Blood"       Speed="2.5"  ShowRadius="3" />
+    <Item Id="7"  Name="Gift"        Speed="3"    ShowRadius="3" />
+    <Item Id="8"  Name="Key"         Speed="1.5"  ShowRadius="3" Values="3" />
+    <Item Id="9"  Name="Shield"      Speed="3"    ShowRadius="3" />
+    <Item Id="10" Name="Rage"        Speed="3"    ShowRadius="3" />
+    <Item Id="11" Name="Move"        Speed="4"    ShowRadius="3" />
+  </Items>
+
+  <Sounds>
+    <Clip Id="1" Prefab="NormalDie" />
+    <Clip Id="2" Prefab="Transform" />
+    <Clip Id="3" Prefab="Burst" />
+    <Clip Id="4" Prefab="Bee" />
+    <Clip Id="5" Prefab="PowerUp" />
+    <Clip Id="6" Prefab="FireLargeBullet" />
+    <Clip Id="7" Prefab="MonsterScream" />
+  </Sounds>
+
+  <Backgrounds BaseSpeed="2" MovingRatio="0.01" ShakeMax="0.25" DarkFadeTime="0.5" DarkFadeAlpha="0.1">
+
+    <Background Id="1" Prefab="BlueField">
+      <Instance />
+      <Instance Alpha="0.50" Color=""        BackColor="#2798b5" />
+      <Instance Alpha="1.00" Color="#36506b" BackColor="" />
+      <Instance Alpha="0.50" Color=""        BackColor="#154763" />
+      <Instance Alpha="1.00" Color="#8abbcb" BackColor="" />
+      <Instance Alpha="1.00" Color="#4d8da1" BackColor="" />
+      <Instance Alpha="0.55" Color=""        BackColor="#95e4e8" />
+      <Instance Alpha="0.55" Color=""        BackColor="#153d82" />
+      <Instance Alpha="1.00" Color="#3e8bc7" BackColor="" />
+      <Instance Alpha="0.57" Color="#a7ebbc" BackColor="#3c7a15" />
+      <Instance Alpha="1.00" Color="#a7ebbc" BackColor="" />
+    </Background>
+
+    <Background Id="2" Prefab="BlueWater">
+      <Instance />
+      <Instance Alpha="0.50" Color=""        BackColor="#4bb3ba" />
+      <Instance Alpha="0.72" Color=""        BackColor="#1f50a8" />
+      <Instance Alpha="0.72" Color="#2198ab" BackColor="#2b6ca3" />
+      <Instance Alpha="1.00" Color="#1f96c9" BackColor="" />
+      <Instance Alpha="0.83" Color="#22ccb2" BackColor="#133e48" />
+      <Instance Alpha="0.50" Color="#f7df55" BackColor="#c4632a" />
+      <Instance Alpha="0.80" Color="#fcf266" BackColor="#c4632a" />
+      <Instance Alpha="0.80" Color="#78bfe6" BackColor="#449ccc" />
+      <Instance Alpha="0.50" Color="#a7a7e8" BackColor="#aed3eb" />
+    </Background>
+
+    <Background Id="3" Prefab="BlueSea">
+      <Instance />
+      <Instance Alpha="0.50" Color=""        BackColor="#34768a" />
+      <Instance Alpha="1.00" Color="#58b5ba" BackColor="" />
+      <Instance Alpha="0.70" Color="#b1baf2" BackColor="#84ecf0" />
+      <Instance Alpha="0.60" Color="#ff8f58" BackColor="#c9302d" />
+      <Instance Alpha="0.53" Color="#fce57d" BackColor="#cc9b32" />
+      <Instance Alpha="1.00" Color="#23b582" BackColor="" />
+    </Background>
+
+    <Background Id="4" Prefab="CityNight">
+      <Instance />
+      <Instance Alpha="0.50" Color=""        BackColor="#36506b" />
+      <Instance Alpha="0.50" Color=""        BackColor="#162f3b" />
+      <Instance Alpha="0.80" Color=""        BackColor="#3ea5c2" />
+      <Instance Alpha="0.80" Color=""        BackColor="#b8f6fc" />
+      <Instance Alpha="0.80" Color=""        BackColor="#10330f" />
+      <Instance Alpha="1.00" Color="#63a6ab" BackColor="" />
+      <Instance Alpha="0.30" Color=""        BackColor="#c93030" />
+      <Instance Alpha="0.66" Color="#ff9f87" BackColor="#c93030" />
+      <Instance Alpha="0.77" Color=""        BackColor="#20307d" />
+      <Instance Alpha="0.60" Color=""        BackColor="#131657" />
+    </Background>
+
+    <Background Id="5" Prefab="DarkMountain">
+      <Instance />
+      <Instance Alpha="0.75" Color=""        BackColor="#1b679c" />
+      <Instance Alpha="0.70" Color=""        BackColor="#e02047" />
+      <Instance Alpha="0.70" Color="#ffd191" BackColor="#55380e" />
+      <Instance Alpha="0.70" Color="#64b4f2" BackColor="#1e8aab" />
+      <Instance Alpha="1.00" Color="#499cbd" BackColor="" />
+      <Instance Alpha="1.00" Color="#d4513a" BackColor="" />
+      <Instance Alpha="0.30" Color="#80ced9" BackColor="#4bb4c2" />
+    </Background>
+
+    <Background Id="6" Prefab="PurpleSky">
+      <Instance />
+      <Instance Alpha="0.70" Color=""        BackColor="#d15a3c" />
+      <Instance Alpha="0.70" Color="#de9987" BackColor="#d15a3c" />
+      <Instance Alpha="0.70" Color=""        BackColor="#2368ab" />
+      <Instance Alpha="0.70" Color="#2e7fcf" BackColor="#e32326" />
+      <Instance Alpha="1.00" Color="#fc6b4a" BackColor="" />
+      <Instance Alpha="0.83" Color="#c4903c" BackColor="#d49238" />
+      <Instance Alpha="0.67" Color="#d1a337" BackColor="#d6b634" />
+    </Background>
+
+    <Background Id="7" Prefab="OrangeSky">
+      <Instance />
+      <Instance Alpha="0.70" Color="#d9916d" BackColor="#bf4e32" />
+      <Instance Alpha="0.70" Color=""        BackColor="#325d87" />
+      <Instance Alpha="0.70" Color="#e0bc2e" BackColor="#180204" />
+      <Instance Alpha="0.70" Color=""        BackColor="#e0bc2e" />
+      <Instance Alpha="0.70" Color="#cca551" BackColor="#d6a02c" />
+      <Instance Alpha="0.70" Color="#ede467" BackColor="#d9ce35" />
+      <Instance Alpha="0.35" Color="#91cdf2" BackColor="#296c94" />
+      <Instance Alpha="0.45" Color=""        BackColor="#1b0000" />
+    </Background>
+
+    <Background Id="8" Prefab="GreenField">
+      <Instance />
+      <Instance Alpha="0.60" Color=""        BackColor="#123370" />
+      <Instance Alpha="0.50" Color=""        BackColor="#276331" />
+      <Instance Alpha="0.75" Color=""        BackColor="#cae8b3" />
+      <Instance Alpha="0.50" Color=""        BackColor="#70acb5" />
+      <Instance Alpha="1.00" Color="#2691d4" BackColor="" />
+      <Instance Alpha="0.50" Color="#2691d4" BackColor="#70acb5" />
+      <Instance Alpha="0.50" Color="#2691d4" BackColor="#426096" />
+      <Instance Alpha="0.50" Color=""        BackColor="#84b046" />
+      <Instance Alpha="0.70" Color="#fa8987" BackColor="#d44846" />
+      <Instance Alpha="0.70" Color="#c49580" BackColor="#d66331" />
+      <Instance Alpha="0.70" Color="#c49580" BackColor="#fac447" />
+      <Instance Alpha="0.70" Color="#c2c262" BackColor="#fac447" />
+    </Background>
+
+    <Background Id="9" Prefab="RedSky">
+      <Instance />
+      <Instance Alpha="0.66" Color=""        BackColor="#d18033" />
+      <Instance Alpha="1.00" Color="#c77f3b" BackColor="" />
+      <Instance Alpha="0.66" Color="#eb9d55" BackColor="#eb9d55" />
+      <Instance Alpha="1.00" Color="#61d4e6" BackColor="" />
+    </Background>
+
+    <Background Id="10" Prefab="Volcano"     BackColor="#C85C33">
+      <Instance />
+      <Instance Alpha="0.50" Color=""        BackColor="#d42130" />
+      <Instance Alpha="1.00" Color="#d42130" BackColor="" />
+      <Instance Alpha="0.70" Color="#35759e" BackColor="#4a88b3" />
+      <Instance Alpha="0.85" Color="#c9b345" BackColor="#c9b345" />
+    </Background>
+
+    <Background Id="11" Prefab="Forest">
+      <Instance />
+      <Instance Alpha="0.50" Color=""        BackColor="#4a864a" />
+      <Instance Alpha="0.60" Color=""        BackColor="#4d7887" />
+      <Instance Alpha="0.60" Color=""        BackColor="#64b5b8" />
+      <Instance Alpha="0.47" Color=""        BackColor="#154567" />
+      <Instance Alpha="0.42" Color=""        BackColor="#49a0a3" />
+      <Instance Alpha="0.42" Color=""        BackColor="#254582" />
+      <Instance Alpha="1.00" Color="#3d9296" BackColor="" />
+      <Instance Alpha="0.53" Color="#65d3f5" BackColor="#2b97b8" />
+      <Instance Alpha="0.60" Color="#d6a33d" BackColor="#ab2a28" />
+      <Instance Alpha="0.75" Color="#c25441" BackColor="#db2319" />
+      <Instance Alpha="0.60" Color="#49a338" BackColor="#328250" />
+      <Instance Alpha="0.60" Color="#49a338" BackColor="#4abf52" />
+    </Background>
+
+  </Backgrounds>
+
+  <FlyingObjects>
+    <FlyingObject Id="1" Prefab="AirShip_Large" Speed="2.2" />
+    <FlyingObject Id="2" Prefab="AirShip_Medium" Speed="2.5" />
+    <FlyingObject Id="3" Prefab="AirShip_Small" Speed="2.7" />
+
+    <FlyingObject Id="4" Prefab="BottomCloud_1" Speed="2.2" />
+    <FlyingObject Id="5" Prefab="BottomCloud_2" Speed="2.3" />
+    <FlyingObject Id="6" Prefab="BottomCloud_3" Speed="2.4" />
+    <FlyingObject Id="7" Prefab="BottomCloud_4" Speed="2.6" />
+
+    <FlyingObject Id="8" Prefab="Cloud_Large" Speed="2.2" />
+    <FlyingObject Id="9" Prefab="Cloud_Medium" Speed="2.4" />
+    <FlyingObject Id="10" Prefab="Cloud_Small" Speed="2.7" />
+
+    <FlyingObject Id="11" Prefab="DarkWhaleShip_Large" Speed="2.2" />
+    <FlyingObject Id="12" Prefab="DarkWhaleShip_Medium" Speed="2.5" />
+    <FlyingObject Id="13" Prefab="DarkWhaleShip_Small" Speed="2.7" />
+
+    <FlyingObject Id="14" Prefab="FlyingIsland_Large" Speed="2.2" />
+    <FlyingObject Id="15" Prefab="FlyingIsland_Medium" Speed="2.5" />
+    <FlyingObject Id="16" Prefab="FlyingIsland_Small" Speed="2.7" />
+
+    <FlyingObject Id="17" Prefab="FlyingShip_Large" Speed="2.2" />
+    <FlyingObject Id="18" Prefab="FlyingShip_Medium" Speed="2.5" />
+    <FlyingObject Id="19" Prefab="FlyingShip_Small" Speed="2.7" />
+
+    <FlyingObject Id="20" Prefab="MagmarRock_1" Speed="2.2" />
+    <FlyingObject Id="21" Prefab="MagmarRock_2" Speed="2.3" />
+    <FlyingObject Id="22" Prefab="MagmarRock_3" Speed="2.4" />
+    <FlyingObject Id="23" Prefab="MagmarRock_4" Speed="2.6" />
+
+    <FlyingObject Id="24" Prefab="Orbit_Large" Speed="2.2" />
+    <FlyingObject Id="25" Prefab="Orbit_Medium" Speed="2.5" />
+    <FlyingObject Id="26" Prefab="Orbit_Small" Speed="2.7" />
+
+    <FlyingObject Id="27" Prefab="RocketShip_1" Speed="2.2" />
+    <FlyingObject Id="28" Prefab="RocketShip_2" Speed="2.5" />
+
+    <FlyingObject Id="29" Prefab="SharkShip_1" Speed="2.2" />
+    <FlyingObject Id="30" Prefab="SharkShip_2" Speed="2.5" />
+
+    <FlyingObject Id="31" Prefab="SteelShip_Large" Speed="2.2" />
+    <FlyingObject Id="32" Prefab="SteelShip_Medium" Speed="2.5" />
+    <FlyingObject Id="33" Prefab="SteelShip_Small" Speed="2.7" />
+
+    <FlyingObject Id="34" Prefab="WhaleShip_1" Speed="2.2" />
+    <FlyingObject Id="35" Prefab="WhaleShip_2" Speed="2.5" />
+
+    <FlyingObject Id="36" Prefab="Cloud_Large_Top" Speed="2.2" />
+    <FlyingObject Id="37" Prefab="Cloud_Medium_Top" Speed="2.4" />
+    <FlyingObject Id="38" Prefab="Cloud_Small_Top" Speed="2.7" />
+
+    <FlyingObject Id="39" Prefab="Mist_1" Speed="2.2" />
+    <FlyingObject Id="40" Prefab="Mist_2" Speed="2.2" />
+    <FlyingObject Id="41" Prefab="Mist_1_Top" Speed="2.2" />
+    <FlyingObject Id="42" Prefab="Mist_2_Top" Speed="2.2" />
+
+    <FlyingObject Id="43" Prefab="Mist_Of_Insect" Speed="2.2" />
+
+  </FlyingObjects>
+
+</Data>

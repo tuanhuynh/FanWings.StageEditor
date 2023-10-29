@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Game>
+  <Items>
+    <Item Type="1" Id="1" Name="HornFish" MaxVersion="5" />
+    <Item Type="1" Id="2" Name="TinyFish" MaxVersion="4" />
+    <Item Type="1" Id="3" Name="YellowFish"  MaxVersion="5" />
+    <Item Type="1" Id="4" Name="Tick"  MaxVersion="4" />
+    <Item Type="1" Id="5" Name="WhaleShark" MaxVersion="2" />
+    <Item Type="1" Id="6" Name="Hummingbird" MaxVersion="2" />
+    <Item Type="1" Id="7" Name="Pupa" MaxVersion="4" />
+    <Item Type="1" Id="8" Name="Bat" MaxVersion="2" />
+    <Item Type="1" Id="9" Name="SpineFish" MaxVersion="1" />
+    <Item Type="1" Id="10" Name="Bomb" MaxVersion="0" />
+    <Item Type="1" Id="11" Name="Rocket" MaxVersion="1" />
+    <Item Type="1" Id="12" Name="Lobster" MaxVersion="1" />
+    <Item Type="1" Id="13" Name="HornCat" MaxVersion="2" />
+    <Item Type="1" Id="14" Name="FiveEyes" MaxVersion="1" />
+    <Item Type="1" Id="15" Name="Beam" MaxVersion="1" />
+    
+    <Item Type="1" Id="16" Name="OrangeHornFish" MaxVersion="5" />
+    <Item Type="1" Id="17" Name="RedTinyFish"  MaxVersion="4" />
+    <Item Type="1" Id="18" Name="BlueFish" MaxVersion="5" />
+    <Item Type="1" Id="19" Name="BlackBomb"  MaxVersion="0" />
+    <Item Type="1" Id="20" Name="LittleSpineFish"  MaxVersion="1" />
+    <Item Type="1" Id="21" Name="BeeHive"  MaxVersion="0" />
+    <Item Type="1" Id="22" Name="MistInsect"  MaxVersion="0" />
+    <Item Type="1" Id="23" Name="StalkerBeast"  MaxVersion="0" />
+    <Item Type="1" Id="24" Name="Libe"  MaxVersion="3" />
+    <Item Type="1" Id="25" Name="OBird"  MaxVersion="1" />
+    <Item Type="1" Id="26" Name="UglyBeast"  MaxVersion="2" />
+    <Item Type="1" Id="27" Name="LeafBird"  MaxVersion="2" />
+    <Item Type="1" Id="28" Name="BrownBird"  MaxVersion="2" />
+    <Item Type="1" Id="29" Name="FlyingPinsir"  MaxVersion="1" />
+    <Item Type="1" Id="30" Name="TransBeast"  MaxVersion="1" />
+
+    <Item Type="1" Id="31" Name="CuteMonsta" MaxVersion="3" />
+    <Item Type="1" Id="32" Name="TinyMonsta" MaxVersion="3" />
+    <Item Type="1" Id="33" Name="BigMonsta"  MaxVersion="4" />
+    
+    
+    <Item Type="2" Id="1" Name="Barberrus" MaxVersion="0"/>
+    <!--<Item Type="3" Id="6" Name="Blood" MaxVersion="0"/>-->
+    <Item Type="3" Id="8" Name="Key" MaxVersion="0"/>
+    <Item Type="3" Id="11" Name="Move" MaxVersion="0"/>
+    <!--<Item Type="3" Id="9" Name="Shield" MaxVersion="0"/>-->
+    <Item Type="4" Id="1" Name="Capricorn" MaxVersion="0" />
+  
+    <Item Type="5" Id="1" Name="AirShip_Large" />
+    <Item Type="5" Id="2" Name="AirShip_Medium"/>
+    <Item Type="5" Id="3" Name="AirShip_Small" />
+    
+    <Item Type="5" Id="4" Name="Bottom_Cloud_01" />
+    <Item Type="5" Id="5" Name="Bottom_Cloud_02" />
+    <Item Type="5" Id="6" Name="Bottom_Cloud_03" />
+    <Item Type="5" Id="7" Name="Bottom_Cloud_04" />
+    <Item Type="5" Id="8" Name="NormalCloud_01" />
+    <Item Type="5" Id="9" Name="NormalCloud_02" />
+    <Item Type="5" Id="10" Name="NormalCloud_03" />
+    <Item Type="5" Id="36" Name="NormalCloud_01_Top" />
+    <Item Type="5" Id="37" Name="NormalCloud_02_Top" />
+    <Item Type="5" Id="38" Name="NormalCloud_03_Top" />
+    <Item Type="5" Id="39" Name="Mist_01" />
+    <Item Type="5" Id="40" Name="Mist_02" />
+    <Item Type="5" Id="41" Name="Mist_01_Top" />
+    <Item Type="5" Id="42" Name="Mist_02_Top" />
+    
+    <Item Type="5" Id="11" Name="DarkWhaleShip_Large" />
+    <Item Type="5" Id="12" Name="DarkWhaleShip_Medium" />
+    <Item Type="5" Id="13" Name="DarkWhaleShip_Small" />
+    <Item Type="5" Id="14" Name="FlyingIsland_Large" />
+    <Item Type="5" Id="15" Name="FlyingIsland_Medium" />
+    <Item Type="5" Id="16" Name="FlyingIsland_Small" />
+    <Item Type="5" Id="17" Name="FlyingShip_Large" />
+    <Item Type="5" Id="18" Name="FlyingShip_Medium" />
+    <Item Type="5" Id="19" Name="FlyingShip_Small" />
+    <Item Type="5" Id="20" Name="MagmarRock_01" />
+    <Item Type="5" Id="21" Name="MagmarRock_02" />
+    <Item Type="5" Id="22" Name="MagmarRock_03" />
+    <Item Type="5" Id="23" Name="MagmarRock_04" />
+    <Item Type="5" Id="24" Name="Orbits_Large" />
+    <Item Type="5" Id="25" Name="Orbits_Medium" />
+    <Item Type="5" Id="26" Name="Orbits_Small"  />
+    <Item Type="5" Id="27" Name="RocketShip_01" />
+    <Item Type="5" Id="28" Name="RocketShip_02" />
+    <Item Type="5" Id="29" Name="SharkShip_01" />
+    <Item Type="5" Id="30" Name="SharkShip_02" />
+    <Item Type="5" Id="31" Name="SteelShip_Large" />
+    <Item Type="5" Id="32" Name="SteelShip_Medium" />
+    <Item Type="5" Id="33" Name="SteelShip_Small"  />
+    <Item Type="5" Id="34" Name="WhaleShip_01" />
+    <Item Type="5" Id="35" Name="WhaleShip_02" />
+    
+
+    
+  </Items>
+
+  <Notifications>
+    <Notification Id="1" Type="0" Content="Ready" />
+    <Notification Id="2" Type="0" Content="Be Careful" />
+    <Notification Id="3" Type="0" Content="New wave comming" />
+    <Notification Id="4" Type="0" Content="Boss {0}" />
+    <Notification Id="5" Type="0" Content="Dark sky ahead" />
+    <Notification Id="6" Type="1" Content="Exellent!" />
+    <Notification Id="7" Type="1" Content="Perfect" />
+
+  </Notifications>
+
+</Game>
